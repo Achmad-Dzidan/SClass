@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="55dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/transpar"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtUsername"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="55dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@id/edtPassword"
+        android:background="@drawable/rounded_button"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/edtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/yellow"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+</RelativeLayout>

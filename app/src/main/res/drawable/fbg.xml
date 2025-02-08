@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background biru -->
+    <item>
+        <color android:color="@color/blue"/>
+    </item>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sclass"
+        android:scaleType="fitCenter"
+        android:layout_gravity="top|center_horizontal"/>
+
+
+    <!-- Background putih dengan lekukan -->
+    <item android:top="300dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <corners android:topLeftRadius="50dp" android:topRightRadius="50dp"/>
+        </shape>
+    </item>
+
+</layer-list>
