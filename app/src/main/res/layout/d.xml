@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fbg2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="40dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"
+            android:contentDescription="Kembali"
+            android:background="@color/transpar"
+            android:layout_gravity="start" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sclass"
+            android:scaleType="fitCenter"
+            android:layout_gravity="top|center_horizontal"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/d" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Sejarah Indonesia"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Drs. Djakariah M. Pd."
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sejarah Lengkap Indonesia dari Era Klasik hingga Terkini. Sejak ribuan bahkan jutaan tahun silam, nusantara telah menorehkan jejak sejarahnya sendiri. Kehidupan dinusantara ini memang telah mulai jauh sebelum kemerdekaan negara kesatuan Republik Indonesia diproklamirkan oleh Soekarno.
+\n\nDidalam buku ini, dihadirkan secara lengkap dan komprehensif sejarah Indonesia sejak era prasejarah, era prakolanial, era kolonial, era kemerdekaan awal, era orde baru, hingga era reformasi. Dilengkapi penjelasan mengenai asal mula nama Indonesia dan sejarah kerajaan-kerajaan yang pernah hadir di nusantara ini sebelum lahirnya NKRI, buku ini tak hanya menawarkan pengetahuan sejarah semata, melainkan juga menyuguhkan kekayaan nusantara sebagai ladang NKRI yang kian menguhukuhkan kehadirannya didalam pergaulan dunia.
+\n\nInilah buku terlengkap tentang sejarah kelahiran negara kesatuan Republik Indonesia yang wajib Anda baca!"
+        android:textSize="11.6sp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
